@@ -18,10 +18,9 @@ print('You selected: ' + str(int(sel + 1)))
 input()
 ```
 # Mode
-Mode=1
-Выделение цветом
-mode=0
-Выделение стрелочкой
+Mode=1 - Выделение цветом    
+mode=0 - Выделение стрелочкой
 # In console
+Mode 0    Mode 1
 ![Mode 0](Mode0.gif)
 ![Mode 1](Mode1.gif)
