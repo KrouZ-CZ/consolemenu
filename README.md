@@ -19,7 +19,7 @@ input()
 ```
 # Mode
 Mode=1 - Выделение цветом    
-mode=0 - Выделение стрелочкой
+Mode=0 - Выделение стрелочкой
 # In console
 Mode 0    
 ![Mode 0](Mode0.gif)    
