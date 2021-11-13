@@ -1,22 +1,34 @@
 from pynput import keyboard
 from os import system as cmd
-def start(sel):
-    global selection
-    global massiv
+from colorama import init
+init()
+from colorama import Fore, Back, Style
+def start(sel, mode=0, title=None):
+    global selection, massiv, titlep, modep
+    titlep, modep = title, mode
     selection = 0
     massiv = sel
     pr()
     listener = keyboard.Listener(on_press=on_press)
     listener.start()
     listener.join()
-    cmd('pause > nul')
+    input()
     return selection
 def pr():
+    cmd('cls')
+    if titlep != None:
+        print(titlep+':\n')
     for i in range(len(massiv)):
-        if selection == i:
-            print(str(int(i) + 1)+'. '+massiv[i]+' <')
-        else:
-            print(str(int(i) + 1)+'. '+massiv[i])
+        if modep == 0:
+            if selection == i:
+                print(str(int(i) + 1)+'. '+massiv[i]+' <')
+            else:
+                print(str(int(i) + 1)+'. '+massiv[i])
+        elif modep == 1:
+            if selection == i:
+                print(Fore.BLACK + Back.WHITE + str(int(i) + 1)+'. '+massiv[i] + Fore.WHITE + Back.BLACK)
+            else:
+                print(Fore.WHITE + Back.BLACK + str(int(i) + 1)+'. '+massiv[i] + Fore.WHITE + Back.BLACK)
 def math(wh):
     global selection
     if wh == 'plus':
@@ -30,11 +42,9 @@ def math(wh):
 def on_press(key):
     if key == keyboard.Key.down:
         math('plus')
-        cmd('cls')
         pr()
     elif key == keyboard.Key.up:
         math('minus')
-        cmd('cls')
         pr()
     elif key == keyboard.Key.enter:
         return False
