@@ -1,5 +1,5 @@
 # ConsoleMenu
-Consolemenu on python with pynput    
+Consolemenu on python 3 with pynput    
 Powered by [pynput](https://pypi.org/project/pynput/)
 # Pip`s
 ```
