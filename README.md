@@ -6,7 +6,7 @@ Powered by [pynput](https://pypi.org/project/pynput/)
 pip install pynput
 ```
 # Code
-```
+```Python
 import consolemenu
 
 selection = consolemenu.start(['One','Two','Three'])
