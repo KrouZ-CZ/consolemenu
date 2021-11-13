@@ -5,7 +5,7 @@ Powered by [pynput](https://pypi.org/project/pynput/) and [colorama](https://pyp
 Модуль позволяющий сделать меню выбора с помощью стрелок для управления. 
 # Pip`s
 ```
-pip install pynput
+pip install pynput colorama
 ```
 # Code
 ```Python
@@ -17,5 +17,10 @@ sel = consolemenu.start(massiv, mode=1, title='Select number')
 print('You selected: ' + str(int(sel + 1)))
 input()
 ```
+# Mode
+Mode=1
+Выделение цветом
+mode=0
+Выделение стрелочкой
 # In console
-[](https://github.com/KvantPro/consolemenu/blob/943ce4631f5fc0f06e96950efdbf3643391aa783/2021-11-13_22-18-56.gif)
+[Mode 1](https://gfycat.com/uniqueminiatureelver)
