@@ -1,6 +1,10 @@
 # ConsoleMenu
 Consolemenu on python with pynput    
 Powered by [pynput](https://pypi.org/project/pynput/)
+# Pip`s
+```
+C:\>pip install pynput
+```
 # Code
 ```
 import consolemenu
