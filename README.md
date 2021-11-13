@@ -1,6 +1,8 @@
 # ConsoleMenu
 Consolemenu on python 3 with pynput    
 Powered by [pynput](https://pypi.org/project/pynput/)
+# Description 
+Модуль позволяющий сделать меню выбора с помощью стрелок для управления. 
 # Pip`s
 ```
 pip install pynput
