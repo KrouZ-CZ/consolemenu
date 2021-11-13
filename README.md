@@ -18,10 +18,4 @@ print('You selected: ' + str(int(sel + 1)))
 input()
 ```
 # In console
-```
-1. One <
-2. Two
-3. Three
-
-0
-```
+[](https://github.com/KvantPro/consolemenu/blob/943ce4631f5fc0f06e96950efdbf3643391aa783/2021-11-13_22-18-56.gif)
