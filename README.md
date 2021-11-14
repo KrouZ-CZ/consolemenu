@@ -1,5 +1,5 @@
 # ConsoleMenu
-Consolemenu on python 3 with pynput    
+Consolemenu on python 3    
 Powered by [pynput](https://pypi.org/project/pynput/) and [colorama](https://pypi.org/project/colorama/)
 # Description 
 Модуль позволяющий сделать меню выбора с помощью стрелок для управления. 
