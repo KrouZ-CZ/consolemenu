@@ -9,12 +9,12 @@ pip install pynput colorama
 ```
 # Code
 ```Python
-import consolemenu
+import consolemenu # import module
 
-massiv = ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten']
-sel = consolemenu.start(massiv, mode=1, title='Select number')
+massiv = ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'] # Massiv
+sel = consolemenu.start(massiv, mode=1, title='Select number') # Function
 
-print('You selected: ' + str(int(sel + 1)))
+print('You selected: ' + str(int(sel + 1))) # This is not necessary
 input()
 ```
 # Mode
