@@ -4,9 +4,10 @@ from colorama import init
 init()
 from colorama import Fore, Back, Style
 def start(sel, mode=0, title=None):
-    global selection, massiv, titlep, modep
+    global selection, massiv, titlep, modep, dlinna
     titlep, modep = title, mode
     selection = 0
+    dlinna = 0
     massiv = sel
     pr()
     listener = keyboard.Listener(on_press=on_press)
@@ -15,9 +16,16 @@ def start(sel, mode=0, title=None):
     input()
     return selection
 def pr():
+    global dlinna
     cmd('cls')
     if titlep != None:
         print(titlep+':\n')
+    for i in range(len(massiv)):
+        if dlinna < len(massiv[i]):
+            dlinna = len(massiv[i]) + 1
+    for i in range(len(massiv)):
+        for a in range(dlinna - len(massiv[i])):
+            massiv[i] = massiv[i] + ' '
     for i in range(len(massiv)):
         if modep == 0:
             if selection == i:
