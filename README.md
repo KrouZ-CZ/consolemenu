@@ -24,6 +24,6 @@ Mode=0[по умолчанию] - Выделение стрелочкой
 По умолчанию title=None но если вам нужен заголовок просто поменяйте переменную как в демонстрации.
 # In console
 Mode 0    
-![Mode 0](Mode0.gif)    
+![Mode 0](mode0.gif)    
 Mode 1    
-![Mode 1](Mode1.gif)
+![Mode 1](mode1.gif)
