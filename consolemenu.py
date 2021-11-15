@@ -21,9 +21,9 @@ def pr():
     for i in range(len(massiv)):
         if modep == 0:
             if selection == i:
-                print(str(int(i) + 1)+'. '+massiv[i]+' <')
+                print('> ' + str(int(i) + 1)+'. '+massiv[i])
             else:
-                print(str(int(i) + 1)+'. '+massiv[i])
+                print(' '+str(int(i) + 1)+'. '+massiv[i])
         elif modep == 1:
             if selection == i:
                 print(Fore.BLACK + Back.WHITE + str(int(i) + 1)+'. '+massiv[i] + Fore.WHITE + Back.BLACK)
