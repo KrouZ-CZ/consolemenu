@@ -14,7 +14,7 @@ import consolemenu # import module
 array = ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'] # Array
 sel = consolemenu.start(array, mode=1, title='Select number') # Function
 
-print('You selected: ' + str(int(sel + 1))) # This is not necessary
+print(f'You selected: {int(sel + 1)}') # This is not necessary
 input()
 ```
 # Mode
